@@ -463,7 +463,7 @@ export default function Welcome() {
                                 "Amazing service and excellent quality of work!"
                             </div>
                             <div className="w-full mb-5 flex justify-center">
-                                <div className="w-1/2 text-center text-md text-gray-800 font-light ">
+                                <div className="lg:w-1/2 text-center text-md text-gray-800 font-light ">
                                     Lorem ipsum, dolor sit amet consectetur
                                     adipisicing elit. Aut aspernatur nobis sequi
                                     harum iure quibusdam voluptate velit
@@ -493,7 +493,7 @@ export default function Welcome() {
                                 "Amazing service and excellent quality of work!"
                             </div>
                             <div className="w-full mb-5 flex justify-center">
-                                <div className="w-1/2 text-center text-md text-gray-800 font-light ">
+                                <div className="lg:w-1/2 text-center text-md text-gray-800 font-light ">
                                     Lorem ipsum, dolor sit amet consectetur
                                     adipisicing elit. Aut aspernatur nobis sequi
                                     harum iure quibusdam voluptate velit
@@ -523,7 +523,7 @@ export default function Welcome() {
                                 "Amazing service and excellent quality of work!"
                             </div>
                             <div className="w-full mb-5 flex justify-center">
-                                <div className="w-1/2 text-center text-md text-gray-800 font-light ">
+                                <div className="lg:w-1/2 text-center text-md text-gray-800 font-light ">
                                     Lorem ipsum, dolor sit amet consectetur
                                     adipisicing elit. Aut aspernatur nobis sequi
                                     harum iure quibusdam voluptate velit
