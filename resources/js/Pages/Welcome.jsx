@@ -448,9 +448,9 @@ export default function Welcome() {
                 </div>
 
                 {/* Contact / Footer */}
-                <footer className="flex flex-col bg-indigo-900 text-white pt-20">
-                    <div className="flex justify-evenly gap-5 w-full px-10">
-                        <div className="flex flex-col gap-10 basis-1/4">
+                <footer className="flex flex-col bg-indigo-950 text-white pt-20">
+                    <div className="flex flex-col lg:flex-row justify-around gap-5 w-full lg:px-10 px-5">
+                        <div className="flex flex-col gap-10 lg:basis-1/4">
                             <div className="w-52">
                                 <img
                                     src="https://www.medanit.com/build/assets/Logo-06e10315.png"
@@ -472,6 +472,17 @@ export default function Welcome() {
                                 <FaYoutube />
                             </div>
                         </div>
+                        <div className="flex flex-col gap-3 text-md lg:basis-1/4">
+                            <div className="text-xl font-extrabold mb-5">
+                                Get In touch
+                            </div>
+                            <div>
+                                Alemnesh Plaza, Bole Medhanialem, Addis Ababa,
+                                Ethiopia
+                            </div>
+                            <div>beamlak@gmail.com</div>
+                            <div>+251912345678</div>
+                        </div>
                         <div className="flex flex-col text-md ">
                             <div className="text-xl font-extrabold mb-5">
                                 Company
@@ -482,17 +493,6 @@ export default function Welcome() {
                                 <div>Services</div>
                                 <div>Testimony</div>
                             </div>
-                        </div>
-                        <div className="flex flex-col gap-3 text-md ">
-                            <div className="text-xl font-extrabold mb-5">
-                                Get In touch
-                            </div>
-                            <div>
-                                Alemnesh Plaza, Bole Medhanialem, Addis Ababa,
-                                Ethiopia
-                            </div>
-                            <div>beamlak@gmail.com</div>
-                            <div>+251912345678</div>
                         </div>
                     </div>
                     <div className="text-center text-sm border-t border-t-slate-400 mt-10 py-10">
