@@ -123,8 +123,8 @@ export default function Welcome() {
                 </div>
 
                 {/* Services */}
-                <div className="flex flex-col gap-5 items-center py-32 px-10 bg-indigo-50">
-                    <div className="text-5xl font-extrabold">
+                <div className="flex flex-col gap-5 items-center lg:py-32 py-20 lg:px-10 px-5 bg-indigo-50">
+                    <div className="lg:text-5xl text-3xl font-extrabold">
                         How can we help you?
                     </div>
                     <div className="lg:w-1/2 text-center text-md text-gray-800 font-light">
@@ -133,7 +133,7 @@ export default function Welcome() {
                         incidunt sit voluptatibus dolores consectetur animi.
                     </div>
                     <div className="flex flex-wrap gap-5 mt-10 justify-center ">
-                        <div className="flex flex-col gap-5 bg-white basis-1/4 p-10 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 p-10 rounded-lg">
                             <div>
                                 <IoMedical className="text-red-500 text-xl" />
                             </div>
@@ -148,7 +148,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white basis-1/4 p-10 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 p-10 rounded-lg">
                             <div>
                                 <IoMedical className="text-red-500 text-xl" />
                             </div>
@@ -163,7 +163,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white basis-1/4 p-10 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 p-10 rounded-lg">
                             <div>
                                 <IoMedical className="text-red-500 text-xl" />
                             </div>
@@ -178,7 +178,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white basis-1/4 p-10 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 p-10 rounded-lg">
                             <div>
                                 <IoMedical className="text-red-500 text-xl" />
                             </div>
@@ -193,7 +193,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white basis-1/4 p-10 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 p-10 rounded-lg">
                             <div>
                                 <IoMedical className="text-red-500 text-xl" />
                             </div>
@@ -211,15 +211,17 @@ export default function Welcome() {
                 </div>
 
                 {/* Blog */}
-                <div className="flex flex-col gap-5 items-center py-32 px-10 ">
-                    <div className="text-5xl font-extrabold">Blogs</div>
+                <div className="flex flex-col gap-5 items-center lg:py-32 py-20 lg:px-10 px-5  ">
+                    <div className="lg:text-5xl text-3xl font-extrabold">
+                        Blogs
+                    </div>
                     <div className="lg:w-1/2 text-center text-md text-gray-800 font-light">
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Dignissimos similique ducimus modi eveniet cumque
                         incidunt sit voluptatibus dolores consectetur animi.
                     </div>
-                    <div className="flex flex-wrap mt-10 justify-center ">
-                        <div className="flex flex-col gap-5 bg-white basis-1/4 p-10 rounded-lg">
+                    <div className="flex flex-wrap gap-5 mt-10 justify-center ">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 lg:p-10 p-5 border shadow-sm rounded-lg">
                             <div>
                                 <img
                                     src="https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/06/portfolio1.jpg"
@@ -238,7 +240,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white basis-1/4 p-10 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 lg:p-10 p-5 border shadow-sm rounded-lg">
                             <div>
                                 <img
                                     src="https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/06/portfolio2.jpg"
@@ -257,7 +259,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white basis-1/4 p-10 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 lg:p-10 p-5 border shadow-sm rounded-lg">
                             <div>
                                 <img
                                     src="https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/06/portfolio3.jpg"
@@ -277,7 +279,7 @@ export default function Welcome() {
                         </div>
                     </div>
 
-                    <div>
+                    <div className="mt-10">
                         <div className="px-6 py-2 bg-indigo-500 text-white uppercase rounded-lg">
                             Explore More
                         </div>
@@ -285,15 +287,17 @@ export default function Welcome() {
                 </div>
 
                 {/* Partners */}
-                <div className="flex flex-col gap-5 items-center px-10 ">
-                    <div className="text-5xl font-extrabold">Partners</div>
+                <div className="flex flex-col gap-5 items-center lg:px-10 px-5 py-10 ">
+                    <div className="lg:text-5xl text-3xl font-extrabold">
+                        Partners
+                    </div>
                     <div className="lg:w-1/2 text-center text-md text-gray-800 font-light">
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Dignissimos similique ducimus modi eveniet cumque
                         incidunt sit voluptatibus dolores consectetur animi.
                     </div>
                     <div className="flex flex-wrap mt-10 justify-around ">
-                        <div className="flex flex-col gap-5 bg-white basis-1/5 p-10 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/5 lg:p-10 rounded-lg">
                             <div>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -310,7 +314,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white basis-1/5 p-10 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/5 lg:p-10 rounded-lg">
                             <div>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -331,7 +335,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white basis-1/5 p-10 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/5 lg:p-10 rounded-lg">
                             <div>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -348,7 +352,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white basis-1/5 p-10 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/5 lg:p-10 rounded-lg">
                             <div>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -416,11 +420,11 @@ export default function Welcome() {
                 </div>
 
                 {/* Testimony */}
-                <div className=" py-32 px-10 bg-indigo-50">
+                <div className=" py-32 lg:px-10 px-5 bg-indigo-50">
                     <div className="flex flex-col gap-5 items-center">
-                        <blockquote className="text-3xl font-extrabold capitalize">
+                        <div className="lg:text-3xl capitalize text-xl font-extrabold text-center">
                             "Amazing service and excellent quality of work!"
-                        </blockquote>
+                        </div>
                         <div className="lg:w-1/2 text-center text-md text-gray-800 font-light">
                             Lorem ipsum, dolor sit amet consectetur adipisicing
                             elit. Aut aspernatur nobis sequi harum iure
