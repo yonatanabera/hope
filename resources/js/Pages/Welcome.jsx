@@ -21,7 +21,7 @@ export default function Welcome() {
             <Head title="Welcome" />
 
             <div className="">
-                <div className="">
+                <div className="" id="home">
                     {/* Hero Image */}
                     <div className="relative  h-screen w-full bg-center bg-[url(https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/06/home-hero-bg.jpg)] bg-cover ">
                         <div className="overlay bg-indigo-900 h-screen absolute inset-0 opacity-50"></div>
@@ -40,13 +40,23 @@ export default function Welcome() {
 
                             {/* Menu Items */}
                             <div className="menu flex gap-1 font-semibold">
-                                <div className="px-5 py-2">Home</div>
-                                <div className="px-5 py-2">Services</div>
-                                <div className="px-5 py-2">Blog</div>
-                                <div className="px-5 py-2">Partners</div>
-                                <div className="px-5 py-2">Testimony</div>
+                                <div className="px-5 py-2">
+                                    <Link href="#home">Home</Link>
+                                </div>
+                                <div className="px-5 py-2">
+                                    <Link href="#services">Services</Link>
+                                </div>
+                                <div className="px-5 py-2">
+                                    <Link href="#blogs">Blog</Link>
+                                </div>
+                                <div className="px-5 py-2">
+                                    <Link href="#partners">Partners</Link>
+                                </div>
+                                <div className="px-5 py-2">
+                                    <Link href="#testimony">Testimony</Link>
+                                </div>
                                 <div className="px-5 py-2 bg-indigo-500 rounded-full">
-                                    Contact us
+                                    <Link href="#contact">Contact us</Link>
                                 </div>
                             </div>
                         </nav>
@@ -126,7 +136,10 @@ export default function Welcome() {
                 </div>
 
                 {/* Services */}
-                <div className="flex flex-col gap-5 items-center lg:py-32 py-20 lg:px-10 px-5 bg-indigo-50">
+                <div
+                    id="services"
+                    className="flex flex-col gap-5 items-center lg:py-32 py-20 lg:px-10 px-5 bg-indigo-50"
+                >
                     <div className="lg:text-5xl text-3xl font-extrabold">
                         How can we help you?
                     </div>
@@ -214,7 +227,10 @@ export default function Welcome() {
                 </div>
 
                 {/* Blog */}
-                <div className="flex flex-col gap-5 items-center lg:py-32 py-20 lg:px-10 px-5  ">
+                <div
+                    id="blogs"
+                    className="flex flex-col gap-5 items-center lg:py-32 py-20 lg:px-10 px-5  "
+                >
                     <div className="lg:text-5xl text-3xl font-extrabold">
                         Blogs
                     </div>
@@ -224,7 +240,7 @@ export default function Welcome() {
                         incidunt sit voluptatibus dolores consectetur animi.
                     </div>
                     <div className="flex flex-wrap gap-5 mt-10 justify-center ">
-                        <div className="flex flex-col gap-5 bg-white lg:basis-1/3 sm:basis-2/5 xs:basis-1/2 lg:p-10 p-5 border shadow-sm rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 md:basis-1/3 sm:basis-2/5 xs:basis-1/2 lg:p-10 p-5 border shadow-sm rounded-lg">
                             <div>
                                 <img
                                     src="https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/06/portfolio1.jpg"
@@ -243,7 +259,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white lg:basis-1/3 sm:basis-2/5 xs:basis-1/2 lg:p-10 p-5 border shadow-sm rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 md:basis-1/3 sm:basis-2/5 xs:basis-1/2 lg:p-10 p-5 border shadow-sm rounded-lg">
                             <div>
                                 <img
                                     src="https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/06/portfolio2.jpg"
@@ -262,7 +278,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white lg:basis-1/3 sm:basis-2/5 xs:basis-1/2 lg:p-10 p-5 border shadow-sm rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 md:basis-1/3 sm:basis-2/5 xs:basis-1/2 lg:p-10 p-5 border shadow-sm rounded-lg">
                             <div>
                                 <img
                                     src="https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/06/portfolio3.jpg"
@@ -290,7 +306,10 @@ export default function Welcome() {
                 </div>
 
                 {/* Partners */}
-                <div className="flex flex-col gap-5 items-center lg:px-10 px-5 py-10 ">
+                <div
+                    id="partners"
+                    className="flex flex-col gap-5 items-center lg:px-10 px-5 py-10 "
+                >
                     <div className="lg:text-5xl text-3xl font-extrabold">
                         Partners
                     </div>
@@ -423,7 +442,10 @@ export default function Welcome() {
                 </div>
 
                 {/* Testimony */}
-                <div className=" py-32 lg:px-10 px-5 bg-indigo-50">
+                <div
+                    id="testimony"
+                    className=" py-32 lg:px-10 px-5 bg-indigo-50"
+                >
                     <div className="flex flex-col gap-5 items-center">
                         <div className="lg:text-3xl capitalize text-xl font-extrabold text-center">
                             "Amazing service and excellent quality of work!"
@@ -451,7 +473,10 @@ export default function Welcome() {
                 </div>
 
                 {/* Contact / Footer */}
-                <footer className="flex flex-col bg-indigo-950 text-white pt-20">
+                <footer
+                    id="contact"
+                    className="flex flex-col bg-indigo-950 text-white pt-20"
+                >
                     <div className="flex flex-col lg:flex-row justify-around gap-5 w-full lg:px-10 px-5">
                         <div className="flex flex-col gap-10 lg:basis-1/4">
                             <div className="w-52">
@@ -491,10 +516,22 @@ export default function Welcome() {
                                 Company
                             </div>
                             <div className="flex flex-col gap-3">
-                                <div>Home</div>
-                                <div>Blogs</div>
-                                <div>Services</div>
-                                <div>Testimony</div>
+                                <div>
+                                    {" "}
+                                    <Link href="#home">Home</Link>
+                                </div>
+                                <div>
+                                    {" "}
+                                    <Link href="#blogs">Blogs</Link>
+                                </div>
+                                <div>
+                                    {" "}
+                                    <Link href="#services">Services</Link>
+                                </div>
+                                <div>
+                                    {" "}
+                                    <Link href="#testimony">Testimony</Link>
+                                </div>
                             </div>
                         </div>
                     </div>
