@@ -9,12 +9,23 @@ import {
     FaTwitter,
     FaYoutube,
 } from "react-icons/fa";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 export default function Welcome() {
     const [openMenu, setOpenMenu] = useState(false);
 
     const date = new Date();
     const year = date.getFullYear();
+
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    };
 
     return (
         <>
@@ -446,30 +457,97 @@ export default function Welcome() {
                     id="testimony"
                     className=" py-32 lg:px-10 px-5 bg-indigo-50"
                 >
-                    <div className="flex flex-col gap-5 items-center">
-                        <div className="lg:text-3xl capitalize text-xl font-extrabold text-center">
-                            "Amazing service and excellent quality of work!"
-                        </div>
-                        <div className="lg:w-1/2 text-center text-md text-gray-800 font-light">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Aut aspernatur nobis sequi harum iure
-                            quibusdam voluptate velit corporis dolore illo
-                            soluta eius, explicabo alias, consequatur saepe
-                            voluptates! Nostrum, rerum quo!
-                        </div>
+                    <Slider {...settings}>
+                        <div className="flex flex-col gap-5 items-center justify-center my-5">
+                            <div className="lg:text-3xl  capitalize text-xl font-extrabold text-center mb-5">
+                                "Amazing service and excellent quality of work!"
+                            </div>
+                            <div className="w-full mb-5 flex justify-center">
+                                <div className="w-1/2 text-center text-md text-gray-800 font-light ">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Aut aspernatur nobis sequi
+                                    harum iure quibusdam voluptate velit
+                                    corporis dolore illo soluta eius, explicabo
+                                    alias, consequatur saepe voluptates!
+                                    Nostrum, rerum quo!
+                                </div>
+                            </div>
 
-                        <div className="flex flex-col justify-center items-center">
-                            <img
-                                src="https://ui-avatars.com/api/?name=John+Doe&background=6366F1&color=fff"
-                                alt=""
-                                className="w-14 h-14 rounded-full mb-5"
-                            />
-                            <div className="font-extrabold mb-1">John Doe</div>
-                            <div className="text-xs font-light">
-                                CEO, Muger LLC
+                            <div className="flex flex-col justify-center items-center">
+                                <img
+                                    src="https://ui-avatars.com/api/?name=John+Doe&background=6366F1&color=fff"
+                                    alt=""
+                                    className="w-14 h-14 rounded-full mb-5"
+                                />
+                                <div className="font-extrabold mb-1">
+                                    John Doe
+                                </div>
+                                <div className="text-xs font-light">
+                                    CEO, Muger LLC
+                                </div>
                             </div>
                         </div>
-                    </div>
+
+                        <div className="flex flex-col gap-5 items-center justify-center my-5">
+                            <div className="lg:text-3xl  capitalize text-xl font-extrabold text-center mb-5">
+                                "Amazing service and excellent quality of work!"
+                            </div>
+                            <div className="w-full mb-5 flex justify-center">
+                                <div className="w-1/2 text-center text-md text-gray-800 font-light ">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Aut aspernatur nobis sequi
+                                    harum iure quibusdam voluptate velit
+                                    corporis dolore illo soluta eius, explicabo
+                                    alias, consequatur saepe voluptates!
+                                    Nostrum, rerum quo!
+                                </div>
+                            </div>
+
+                            <div className="flex flex-col justify-center items-center">
+                                <img
+                                    src="https://ui-avatars.com/api/?name=John+Doe&background=6366F1&color=fff"
+                                    alt=""
+                                    className="w-14 h-14 rounded-full mb-5"
+                                />
+                                <div className="font-extrabold mb-1">
+                                    John Doe
+                                </div>
+                                <div className="text-xs font-light">
+                                    CEO, Muger LLC
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col gap-5 items-center justify-center my-5">
+                            <div className="lg:text-3xl  capitalize text-xl font-extrabold text-center mb-5">
+                                "Amazing service and excellent quality of work!"
+                            </div>
+                            <div className="w-full mb-5 flex justify-center">
+                                <div className="w-1/2 text-center text-md text-gray-800 font-light ">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Aut aspernatur nobis sequi
+                                    harum iure quibusdam voluptate velit
+                                    corporis dolore illo soluta eius, explicabo
+                                    alias, consequatur saepe voluptates!
+                                    Nostrum, rerum quo!
+                                </div>
+                            </div>
+
+                            <div className="flex flex-col justify-center items-center">
+                                <img
+                                    src="https://ui-avatars.com/api/?name=John+Doe&background=6366F1&color=fff"
+                                    alt=""
+                                    className="w-14 h-14 rounded-full mb-5"
+                                />
+                                <div className="font-extrabold mb-1">
+                                    John Doe
+                                </div>
+                                <div className="text-xs font-light">
+                                    CEO, Muger LLC
+                                </div>
+                            </div>
+                        </div>
+                    </Slider>
                 </div>
 
                 {/* Contact / Footer */}
