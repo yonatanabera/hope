@@ -13,6 +13,9 @@ import {
 export default function Welcome() {
     const [openMenu, setOpenMenu] = useState(false);
 
+    const date = new Date();
+    const year = date.getFullYear();
+
     return (
         <>
             <Head title="Welcome" />
@@ -221,7 +224,7 @@ export default function Welcome() {
                         incidunt sit voluptatibus dolores consectetur animi.
                     </div>
                     <div className="flex flex-wrap gap-5 mt-10 justify-center ">
-                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 lg:p-10 p-5 border shadow-sm rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/3 sm:basis-2/5 xs:basis-1/2 lg:p-10 p-5 border shadow-sm rounded-lg">
                             <div>
                                 <img
                                     src="https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/06/portfolio1.jpg"
@@ -240,7 +243,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 lg:p-10 p-5 border shadow-sm rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/3 sm:basis-2/5 xs:basis-1/2 lg:p-10 p-5 border shadow-sm rounded-lg">
                             <div>
                                 <img
                                     src="https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/06/portfolio2.jpg"
@@ -259,7 +262,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 lg:p-10 p-5 border shadow-sm rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/3 sm:basis-2/5 xs:basis-1/2 lg:p-10 p-5 border shadow-sm rounded-lg">
                             <div>
                                 <img
                                     src="https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/06/portfolio3.jpg"
@@ -495,8 +498,8 @@ export default function Welcome() {
                             </div>
                         </div>
                     </div>
-                    <div className="text-center text-sm border-t border-t-slate-400 mt-10 py-10">
-                        Copyright &copy; 2024 Hope Travel Agency | Powered by
+                    <div className="text-center text-sm border-t border-t-slate-400 mt-10 px-10 py-10">
+                        Copyright &copy; {year} Hope Travel Agency | Powered by
                         Medanit IT Solutions
                     </div>
                 </footer>
