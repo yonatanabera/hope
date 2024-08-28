@@ -2,6 +2,13 @@ import { Link, Head } from "@inertiajs/react";
 import { useState } from "react";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoCloseSharp, IoMedical, IoPencil } from "react-icons/io5";
+import {
+    FaFacebook,
+    FaInstagram,
+    FaLinkedin,
+    FaTwitter,
+    FaYoutube,
+} from "react-icons/fa";
 
 export default function Welcome() {
     const [openMenu, setOpenMenu] = useState(false);
@@ -409,10 +416,86 @@ export default function Welcome() {
                 </div>
 
                 {/* Testimony */}
-                <div>Testimony</div>
+                <div className=" py-32 px-10 bg-indigo-50">
+                    <div className="flex flex-col gap-5 items-center">
+                        <blockquote className="text-3xl font-extrabold capitalize">
+                            "Amazing service and excellent quality of work!"
+                        </blockquote>
+                        <div className="lg:w-1/2 text-center text-md text-gray-800 font-light">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Aut aspernatur nobis sequi harum iure
+                            quibusdam voluptate velit corporis dolore illo
+                            soluta eius, explicabo alias, consequatur saepe
+                            voluptates! Nostrum, rerum quo!
+                        </div>
+
+                        <div className="flex flex-col justify-center items-center">
+                            <img
+                                src="https://ui-avatars.com/api/?name=John+Doe&background=6366F1&color=fff"
+                                alt=""
+                                className="w-14 h-14 rounded-full mb-5"
+                            />
+                            <div className="font-extrabold mb-1">John Doe</div>
+                            <div className="text-xs font-light">
+                                CEO, Muger LLC
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 {/* Contact / Footer */}
-                <div>contact</div>
+                <footer className="flex flex-col bg-indigo-900 text-white pt-20">
+                    <div className="flex justify-evenly gap-5 w-full px-10">
+                        <div className="flex flex-col gap-10 basis-1/4">
+                            <div className="w-52">
+                                <img
+                                    src="https://www.medanit.com/build/assets/Logo-06e10315.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div className="text-md">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ab, sit. Iusto laudantium
+                                maxime, voluptatem quibusdam repellat
+                                praesentium nostrum expedita sequi.
+                            </div>
+
+                            <div className="flex gap-3 text-xl">
+                                <FaFacebook />
+                                <FaTwitter />
+                                <FaInstagram />
+                                <FaLinkedin />
+                                <FaYoutube />
+                            </div>
+                        </div>
+                        <div className="flex flex-col text-md ">
+                            <div className="text-xl font-extrabold mb-5">
+                                Company
+                            </div>
+                            <div className="flex flex-col gap-3">
+                                <div>Home</div>
+                                <div>Blogs</div>
+                                <div>Services</div>
+                                <div>Testimony</div>
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-3 text-md ">
+                            <div className="text-xl font-extrabold mb-5">
+                                Get In touch
+                            </div>
+                            <div>
+                                Alemnesh Plaza, Bole Medhanialem, Addis Ababa,
+                                Ethiopia
+                            </div>
+                            <div>beamlak@gmail.com</div>
+                            <div>+251912345678</div>
+                        </div>
+                    </div>
+                    <div className="text-center text-sm border-t border-t-slate-400 mt-10 py-10">
+                        Copyright &copy; 2024 Hope Travel Agency | Powered by
+                        Medanit IT Solutions
+                    </div>
+                </footer>
             </div>
         </>
     );
