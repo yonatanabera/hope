@@ -133,7 +133,7 @@ export default function Welcome() {
                         incidunt sit voluptatibus dolores consectetur animi.
                     </div>
                     <div className="flex flex-wrap gap-5 mt-10 justify-center ">
-                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 p-10 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 sm:basis-2/5 lg:p-10 p-5 rounded-lg">
                             <div>
                                 <IoMedical className="text-red-500 text-xl" />
                             </div>
@@ -148,7 +148,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 p-10 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 sm:basis-2/5 lg:p-10 p-5 rounded-lg">
                             <div>
                                 <IoMedical className="text-red-500 text-xl" />
                             </div>
@@ -163,7 +163,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 p-10 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 sm:basis-2/5 lg:p-10 p-5 rounded-lg">
                             <div>
                                 <IoMedical className="text-red-500 text-xl" />
                             </div>
@@ -178,7 +178,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 p-10 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 sm:basis-2/5 lg:p-10 p-5 rounded-lg">
                             <div>
                                 <IoMedical className="text-red-500 text-xl" />
                             </div>
@@ -193,7 +193,7 @@ export default function Welcome() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 p-10 rounded-lg">
+                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 sm:basis-2/5 lg:p-10 p-5 rounded-lg">
                             <div>
                                 <IoMedical className="text-red-500 text-xl" />
                             </div>
