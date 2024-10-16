@@ -13,8 +13,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Marquee from "react-fast-marquee";
+import NavBar from "./NavBar";
+import Blogs from "@/Components/Blogs";
 
-export default function Welcome() {
+export default function Welcome({ rands }) {
     const [openMenu, setOpenMenu] = useState(false);
 
     const date = new Date();
@@ -38,86 +40,7 @@ export default function Welcome() {
                     <div className="relative  h-screen w-full bg-center bg-[url(https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/06/home-hero-bg.jpg)] bg-cover ">
                         <div className="overlay bg-indigo-900 h-screen absolute inset-0 opacity-50"></div>
 
-                        {/* Nav Bar */}
-
-                        {/* Navbar Large Screen */}
-                        <nav className="hidden relative z-10 lg:flex justify-between items-center text-white px-20 py-10">
-                            {/* Logo */}
-                            <div className="w-52">
-                                <img
-                                    src="https://www.medanit.com/build/assets/Logo-06e10315.png"
-                                    alt=""
-                                />
-                            </div>
-
-                            {/* Menu Items */}
-                            <div className="menu flex gap-1 font-semibold">
-                                <div className="px-5 py-2">
-                                    <Link href="#home">Home</Link>
-                                </div>
-                                <div className="px-5 py-2">
-                                    <Link href="#services">Services</Link>
-                                </div>
-                                <div className="px-5 py-2">
-                                    <Link href="#blogs">Blog</Link>
-                                </div>
-                                <div className="px-5 py-2">
-                                    <Link href="#partners">Partners</Link>
-                                </div>
-                                <div className="px-5 py-2">
-                                    <Link href="#testimony">Testimony</Link>
-                                </div>
-                                <div className="px-5 py-2 bg-indigo-500 rounded-full">
-                                    <Link href="#contact">Contact us</Link>
-                                </div>
-                            </div>
-                        </nav>
-
-                        {/* Navbar Small Screen */}
-                        <nav className="lg:hidden relative z-10 flex  justify-between items-center text-white px-5 py-5">
-                            {/* Logo */}
-                            <div className="w-32">
-                                <img
-                                    src="https://www.medanit.com/build/assets/Logo-06e10315.png"
-                                    alt=""
-                                />
-                            </div>
-
-                            <div
-                                className="p-3 bg-indigo-400 rounded-md"
-                                onClick={() => setOpenMenu(!openMenu)}
-                            >
-                                {openMenu ? (
-                                    <IoCloseSharp className="text-xl" />
-                                ) : (
-                                    <HiOutlineMenuAlt3 className="text-xl" />
-                                )}
-                            </div>
-
-                            {/* Menu Items */}
-                            {openMenu && (
-                                <div className="lg:hidden menu absolute top-20 py-5 right-0 left-0 text-black flex flex-col gap-1 font-semibold bg-white w-full">
-                                    <div className="px-5 py-2 border-b">
-                                        Home
-                                    </div>
-                                    <div className="px-5 py-2 border-b">
-                                        Services
-                                    </div>
-                                    <div className="px-5 py-2 border-b">
-                                        Blog
-                                    </div>
-                                    <div className="px-5 py-2 border-b">
-                                        Partners
-                                    </div>
-                                    <div className="px-5 py-2 border-b">
-                                        Testimony
-                                    </div>
-                                    <div className="px-5 py-2 border-b">
-                                        Contact us
-                                    </div>
-                                </div>
-                            )}
-                        </nav>
+                        <NavBar />
 
                         {/* Hero Content */}
 
@@ -246,83 +169,8 @@ export default function Welcome() {
                 </div>
 
                 {/* Blog */}
-                <div
-                    id="blogs"
-                    className="flex flex-col gap-5 items-center lg:py-32 py-20 lg:px-10 px-5  "
-                >
-                    <div className="lg:text-5xl text-3xl font-extrabold">
-                        Blogs
-                    </div>
-                    <div className="lg:w-1/2 text-center text-md text-gray-800 font-light">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Dignissimos similique ducimus modi eveniet cumque
-                        incidunt sit voluptatibus dolores consectetur animi.
-                    </div>
-                    <div className="flex flex-wrap gap-5 mt-10 justify-center ">
-                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 md:basis-1/3 sm:basis-2/5 xs:basis-1/2 lg:p-10 p-5 border shadow-sm rounded-lg">
-                            <div>
-                                <img
-                                    src="https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/06/portfolio1.jpg"
-                                    alt=""
-                                    className="object-cover"
-                                />
-                            </div>
-                            <div className="text-2xl font-extrabold">
-                                Ethiopia's Health Services
-                            </div>
-                            <div className="text-md font-light text-gray-800">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Reiciendis odio perspiciatis
-                                ipsum natus saepe explicabo alias et sed
-                                consequuntur laudantium.
-                            </div>
-                        </div>
 
-                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 md:basis-1/3 sm:basis-2/5 xs:basis-1/2 lg:p-10 p-5 border shadow-sm rounded-lg">
-                            <div>
-                                <img
-                                    src="https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/06/portfolio2.jpg"
-                                    alt=""
-                                    className="object-cover"
-                                />
-                            </div>
-                            <div className="text-2xl font-extrabold">
-                                Ethiopia's Health Services
-                            </div>
-                            <div className="text-md font-light text-gray-800">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Reiciendis odio perspiciatis
-                                ipsum natus saepe explicabo alias et sed
-                                consequuntur laudantium.
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col gap-5 bg-white lg:basis-1/4 md:basis-1/3 sm:basis-2/5 xs:basis-1/2 lg:p-10 p-5 border shadow-sm rounded-lg">
-                            <div>
-                                <img
-                                    src="https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/06/portfolio3.jpg"
-                                    alt=""
-                                    className="object-cover"
-                                />
-                            </div>
-                            <div className="text-2xl font-extrabold">
-                                Ethiopia's Health Services
-                            </div>
-                            <div className="text-md font-light text-gray-800">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Reiciendis odio perspiciatis
-                                ipsum natus saepe explicabo alias et sed
-                                consequuntur laudantium.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="mt-10">
-                        <div className="px-6 py-2 bg-indigo-500 text-white uppercase rounded-lg">
-                            Explore More
-                        </div>
-                    </div>
-                </div>
+                <Blogs rands={rands} />
 
                 {/* Partners */}
                 <div
