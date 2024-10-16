@@ -16,7 +16,7 @@ class BlogController extends Controller
     }
     public function index()
     {
-        $blogs = Blog::orderBy('created_at', 'desc')->simplePaginate(2);
+        $blogs = Blog::orderBy('created_at', 'desc')->simplePaginate(1);
 
         return Inertia::render('Blog', ['blogs' => $blogs]);
     }
