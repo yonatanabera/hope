@@ -24,7 +24,7 @@ function Blogs({ rands }) {
                                 <img
                                     src={`http://localhost:8000/storage/${rand.image}`}
                                     alt=""
-                                    className="object-cover w-full h-40"
+                                    className="object-cover w-full md:h-40 "
                                 />
                             </div>
                             <div className="text-2xl font-extrabold">

@@ -47,7 +47,7 @@ function BlogDetail({ blog, rands }) {
                 </div>
 
                 <div className="flex flex-col  items-center justify-center my-20 ">
-                    <div className="image w-3/4 flex flex-col gap-10 shadow-lg p-20">
+                    <div className="image md:w-3/4 flex flex-col gap-10 shadow-lg md:p-20 p-5 mx-5">
                         <img
                             src={`http://localhost:8000/storage/${blog.image}`}
                             alt=""
