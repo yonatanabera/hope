@@ -17,12 +17,12 @@ function Blogs({ rands }) {
                 {rands.data.map((rand) => (
                     <Link
                         className="flex flex-col gap-5 bg-white lg:basis-1/4 md:basis-1/3 sm:basis-2/5 xs:basis-1/2 lg:p-10 p-5 border shadow-sm rounded-lg"
-                        href={`http://localhost:8000/blog/${rand.slug}`}
+                        href={`https://www.hopehmc.com/blog/${rand.slug}`}
                     >
                         <div>
                             <div>
                                 <img
-                                    src={`http://localhost:8000/storage/${rand.image}`}
+                                    src={`https://www.hopehmc.com/storage/${rand.image}`}
                                     alt=""
                                     className="object-cover w-full md:h-40 "
                                 />

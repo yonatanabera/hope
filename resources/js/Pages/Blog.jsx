@@ -43,12 +43,12 @@ function Blog({ blogs }) {
                     <div className="w-1/2 flex flex-col gap-5 mt-10 justify-center ">
                         {blogs.data.map((blog) => (
                             <Link
-                                href={`http://localhost:8000/blog/${blog.slug}`}
+                                href={`https://www.hopehmc.com/blog/${blog.slug}`}
                             >
                                 <div className="flex flex-col gap-5 bg-white lg:basis-1/4 md:basis-1/3 sm:basis-2/5 xs:basis-1/2 lg:p-10 p-5 border shadow-sm rounded-lg">
                                     <div>
                                         <img
-                                            src={`http://localhost:8000/storage/${blog.image}`}
+                                            src={`https://www.hopehmc.com/storage/${blog.image}`}
                                             alt=""
                                             className="object-cover w-full h-72"
                                         />
